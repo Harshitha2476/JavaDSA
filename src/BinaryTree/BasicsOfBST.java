@@ -96,7 +96,8 @@ public class BasicsOfBST {
         a.right=d;
         Node e=new Node(6);
         Node f=new Node(7);
-        b.right=e;
+        b.left=e;
+        b.right=f;
         display(root);
         System.out.println();
         preorder(root);
@@ -106,5 +107,13 @@ public class BasicsOfBST {
         System.out.println("Height= "+height(root));
         System.out.println("Minimum= "+mini(root));
         System.out.println("Product = "+product(root));
+
+        System.out.println();
+        System.out.println("Preorder: ");
+        preorder(root);
+        System.out.println("Inorder: ");
+        inorder(root);
+        System.out.println("Postorder: ");
+        postorder(root);
     }
 }

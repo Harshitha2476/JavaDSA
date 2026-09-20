@@ -36,7 +36,9 @@ public class BasicsOfBST {
         System.out.println(root.val);
 
     }
+    public static void levelOrder(Node root){
 
+    }
     public static int size(Node root){
         if(root==null)
             return 0;
